@@ -1,0 +1,29 @@
+.home {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(../../assets/img/fundo-de-papel.jpg);
+  background-size: cover;
+  padding: 60px 40px;
+}
+
+.home h1 {
+  font-size: 28px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  padding: 42px 0px;
+  text-align: center;
+}
+
+.home p {
+  width: 100%;
+  display: flex;
+  max-width: 500px;
+  padding: 24px 0px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+}

@@ -1,0 +1,36 @@
+.APPBAR {
+  background-color: var(--red-color) !important;
+}
+
+.APPBAR h2 {
+  font-family: dugeons, "Georgia";
+  font-family: 14px;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: var(--dark-color);
+  position: absolute;
+}
+
+.navbar a {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--white-color);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 20px;
+}
+
+.navbar li {
+  font-size: 14px;
+  list-style: none;
+}
