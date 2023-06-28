@@ -10,14 +10,12 @@ import Campanha from "./routes/campanha";
 import Deuses from "./routes/deuses";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/campanha" element={<Campanha />} />
-        <Route path="/deuses" element={<Deuses />} />
-      </Routes>
-    </BrowserRouter>
-  </React.StrictMode>
+  <BrowserRouter>
+    <Navbar />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/campanha" element={<Campanha />} />
+      <Route path="/deuses" element={<Deuses />} />
+    </Routes>
+  </BrowserRouter>
 );
