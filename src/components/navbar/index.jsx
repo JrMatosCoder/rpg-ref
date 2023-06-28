@@ -3,7 +3,7 @@ import styles from "./navbar.module.css";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
+import { Link } from "react-router-dom";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 
@@ -22,25 +22,24 @@ const RotasPages = [
   },
 ];
 
-const DrawerComponent = () => {
-  return (
-    <ul className={styles.navbar}>
-      {RotasPages.map((item, index) => (
-        <a href={item.path} key={index}>
-          <li>{item.name}</li>
-        </a>
-      ))}
-    </ul>
-  );
-};
-
 const Navbar = () => {
   const [menu, setMenu] = React.useState(false);
 
-  function OpenMenu(isOpen) {
+  function OpenMenu() {
     setMenu(!menu);
-    console.log(menu);
   }
+
+  const DrawerComponent = () => {
+    return (
+      <ul className={styles.navbar}>
+        {RotasPages.map((item, index) => (
+          <Link to={item.path} key={index} onClick={() => OpenMenu()}>
+            <li>{item.name}</li>
+          </Link>
+        ))}
+      </ul>
+    );
+  };
 
   return (
     <Box sx={{ flexGrow: 1 }}>
