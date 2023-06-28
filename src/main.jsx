@@ -16,6 +16,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Route path="/" element={<Home />} />
       <Route path="campanha" element={<Campanha />} />
       <Route path="deuses" element={<Deuses />} />
+      <Route path="*" element={<div>página não encontrada :(</div>} />
     </Routes>
   </HashRouter>
 );
