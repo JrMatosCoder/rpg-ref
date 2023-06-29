@@ -1,0 +1,67 @@
+/*JOGADORES*/
+
+.jogadores {
+  margin: 15px 0px;
+}
+
+.jogadores h1 {
+  padding: 20px;
+  font-family: dugeons, "Georgia";
+  text-align: center;
+}
+
+.boxperson {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.boxperson img {
+  width: 100%;
+}
+
+.boxperson a {
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid red;
+}
+
+/*JOGADOR*/
+
+.boxjogador {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 700px;
+}
+
+.boxjogador h1 {
+  font-family: dugeons;
+  padding: 20px 0px;
+}
+
+.boxjogador img {
+  width: 100%;
+}
+
+.boxjogador p {
+  margin: 10px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+.boxjogador p > strong {
+  font-size: 1.1rem;
+  font-weight: bold;
+}

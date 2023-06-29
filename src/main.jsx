@@ -8,6 +8,7 @@ import Navbar from "./components/navbar";
 import Home from "./routes/home";
 import Campanha from "./routes/campanha";
 import Deuses from "./routes/deuses";
+import { Jogadores, Jogador } from "./routes/jogadores";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <HashRouter>
@@ -16,6 +17,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Route path="/" element={<Home />} />
       <Route path="campanha" element={<Campanha />} />
       <Route path="deuses" element={<Deuses />} />
+      <Route path="jogadores" element={<Jogadores />} />
+      <Route path="jogadores/:id" element={<Jogador />} />
       <Route path="*" element={<div>página não encontrada :(</div>} />
     </Routes>
   </HashRouter>

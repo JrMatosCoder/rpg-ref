@@ -20,6 +20,10 @@ const RotasPages = [
     name: "Deuses",
     path: "/deuses",
   },
+  {
+    name: "jogadores",
+    path: "/jogadores",
+  },
 ];
 
 const Navbar = () => {
