@@ -21,8 +21,12 @@ const RotasPages = [
     path: "/deuses",
   },
   {
-    name: "jogadores",
+    name: "Jogadores",
     path: "/jogadores",
+  },
+  {
+    name: "Magias",
+    path: "https://avribacki.gitlab.io/magias5e/",
   },
 ];
 
